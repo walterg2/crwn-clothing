@@ -25,11 +25,8 @@ export const signInWithGoogle = () => auth.signInWithPopup(provider);
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
-  console.log(userAuth);
   const userRef = firestore.doc(`users/${userAuth.uid}`);
-  console.log(userRef);
   const snapShot = await userRef.get();
-  console.log(snapShot);
 
   const { displayName, email, phoneNumber, photoURL } = userAuth;
 
