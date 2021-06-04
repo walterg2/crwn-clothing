@@ -38,4 +38,20 @@
       padding-top: 30px;
     }
   }
+
+  .test-warning {
+    text-align: center;
+    font-size: 24px;
+    color: #f00;
+    margin-top: 40px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  button {
+    margin-left: auto;
+    margin-top: 50px;
+  }
 }
